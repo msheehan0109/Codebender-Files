@@ -1,0 +1,29 @@
+int x = 4;
+
+int val;
+
+void setup()
+
+{
+	
+	pinMode (x,INPUT);
+
+	Serial.begin (9600);
+
+
+}
+
+
+void loop()
+
+{
+	
+val =	digitalRead (x);
+
+	Serial.print (val);
+
+	Serial.print (" , ");
+
+	delay(500);
+
+}
